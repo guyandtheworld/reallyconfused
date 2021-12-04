@@ -1,0 +1,120 @@
+$blue-color: #42a5f5;
+
+$color-line: (
+  "DA5D58": #D12E1F,
+  "DA8358": #D1611F,
+  "DAA858": #D1941F,
+  "DACD58": #D1C71F,
+  "C2DA58": #A9D11F,
+  "9DDA58": #76D11F,
+  "78DA58": #43D11F,
+  "58DA5D": #1FD12E,
+  "58DA83": #1FD161,
+  "58DAA8": #1FD194,
+  "58DACD": #1FD1C7,
+  "58C2DA": #1FA9D1,
+  "589DDA": #1F76D1,
+  "5878DA": #1F43D1,
+  "5D58DA": #2E1FD1,
+  "611FD1": #611FD1,
+  "941FD1": #941FD1,
+  "C71FD1": #C71FD1,
+  "D11FA9": #D11FA9,
+  "D11F76": #D11F76,
+  "D11F43": #D11F43,
+  "grey": #afafaf,
+);
+
+@each $color-line, $i in $color-line {
+  .road-#{$color-line}:before {
+    left: -2rem;
+    content: "";
+    width: 10px;
+    height: calc(100% + 4.1rem);
+    // height: 100%;
+    transform: translateX(-50%) translateY(10px);
+    background: $i;
+    display: flex;
+    z-index: -1;
+    position: absolute;
+  }
+
+  .circle-#{$color-line}:before {
+    content: "";
+    top: 0.5rem;
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    left: -2rem;
+    transform: translateX(-50%) translateY(-17.5%);
+    background: $i;
+    display: flex;
+    position: absolute;
+  }
+
+  .circle-#{$color-line}:after {
+    top: 0.5rem;
+    left: -2rem;
+    content: "";
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    transform: translateX(-50%) translateY(15%);
+    background: #ffffff;
+    display: flex;
+    position: absolute;
+  }
+
+  .circle-card-#{$color-line}:before {
+    content: "";
+    top: 8rem;
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    left: -2rem;
+    transform: translateX(-50%) translateY(-17.5%);
+    background: $i;
+    display: flex;
+    position: absolute;
+  }
+
+  .circle-card-#{$color-line}:after {
+    top: 8rem;
+    left: -2rem;
+    content: "";
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    transform: translateX(-50%) translateY(15%);
+    background: #ffffff;
+    display: flex;
+    position: absolute;
+  }
+}
+
+
+
+.addButton {
+  padding-right: 20px;
+  padding-top: 8px;
+}
+
+.startPointer {
+  position: absolute;
+  left: -1.6rem;
+  top: -2.5rem;
+  transform: translateX(-50%);
+  font-weight: 600;
+  color: grey;
+  font-size: 1.25rem;
+}
+
+.endPointer {
+  position: absolute;
+  left: -2rem;
+  top: 3rem;
+  transform: translateX(-50%);
+  font-weight: 600;
+  color: grey;
+  font-size: 1.25rem;
+}

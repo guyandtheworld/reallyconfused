@@ -1,0 +1,6 @@
+README.md
+node_modules
+*.log
+.next
+.vscode
+.idea

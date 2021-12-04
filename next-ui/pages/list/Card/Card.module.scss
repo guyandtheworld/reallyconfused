@@ -1,0 +1,63 @@
+.name {
+font-style: italic;
+}
+
+.language {
+color: #9a9a9a;
+font-weight: 400;
+font-size: 0.7rem;
+}
+
+.languages {
+color: #2a2a2a;
+font-size: 0.8rem;
+font-weight: 500;
+}
+
+.card {
+flex-grow: 1;
+flex-shrink: 0;
+padding: 1rem;
+padding-bottom: 0;
+flex-direction: column;
+font-size: 0.8rem;
+color: #323232;
+}
+
+.timeIcon {
+padding: 0.1rem;
+border-radius: 50%;
+background-color: #6e41e2;
+color: white;
+margin: 0.125rem;
+}
+
+.moneyIcon {
+padding: 0.1rem;
+border-radius: 50%;
+background-color: #f5a123;
+color: white;
+margin: 0.125rem;
+}
+
+.bookIcon {
+padding: 0.1rem 0.2rem;
+border-radius: 50%;
+background-color: #00ab59;
+color: white;
+margin: 0.125rem;
+}
+
+.pill {
+width: fit-content;
+margin-bottom: 0.5rem;
+margin-left: -0.125rem;
+border-radius: 20px;
+background-color: #eaeaea;
+padding: 0.25rem;
+padding-right: 0.5rem;
+}
+
+.pillName {
+padding-left: 0.25rem;
+}

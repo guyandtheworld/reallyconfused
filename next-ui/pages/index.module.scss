@@ -1,0 +1,73 @@
+.card {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1.25rem;
+  border: 1px solid #dadada;
+  font-weight: 700;
+  color: #323232;
+  &:hover {
+    cursor: pointer;
+    .heading {
+      text-decoration: underline;
+    }
+  }
+  &:active {
+    border: 1px solid black !important;
+    transition: 300ms;
+  }
+}
+
+.premiumCard {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12);
+  border-radius: 10px;
+  transition: 0.3s;
+  padding: 40px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.premiumCard:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.contactCard {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12);
+  border-radius: 4px;
+  transition: 0.3s;
+  padding: 40px;
+  text-align: center;
+}
+
+.contactCard:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.pill {
+  margin-top: 16px;
+  align-self: center;
+  font-weight: 400;
+  padding: 0.5rem;
+  font-size: 0.725rem;
+  border-radius: 4rem;
+  background-color: #e1e1e1;
+  span {
+    text-decoration: none;
+    text-align: center;
+  }
+}
+
+.bottomItem {
+  padding-bottom: 100px;
+}
+
+.learnMoreButton {
+  background-color: #e1e1e1;
+}

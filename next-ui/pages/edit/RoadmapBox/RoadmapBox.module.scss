@@ -1,0 +1,22 @@
+$blue-color: #42a5f5;
+
+.search {
+  position: absolute;
+  background: white;
+  width: calc(100% - 0.5rem);
+  border: 1px solid #dfdfdf;
+  max-height: 10rem;
+  overflow-y: auto;
+}
+
+.searchItem {
+  color: black;
+  border: 0;
+  border-radius: 0 !important;
+  background: white;
+  &:hover {
+    cursor: pointer;
+    background: $blue-color;
+    color: white;
+  }
+}

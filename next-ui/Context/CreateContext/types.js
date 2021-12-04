@@ -1,0 +1,12 @@
+export const ADD_MAP = "ADD_MAP";
+export const SAVE_MAP = "SAVE_MAP";
+export const SET_NAME = "SET_NAME";
+export const SET_TYPE = "SET_TYPE";
+export const SET_DESCRIPTION = "SET_DESCRIPTION";
+export const SET_LINK = "SET_LINK";
+export const REMOVE_MAP = "REMOVE_MAP";
+export const SET_DATE = "SET_DATE";
+export const SET_DEFAULT = "SET_DEFAULT";
+export const SET_NEW = "SET_NEW";
+export const SET_ID = "SET_ID"
+export const SET_INCOMPLETE = "SET_INCOMPLETE" 
