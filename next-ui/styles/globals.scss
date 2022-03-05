@@ -437,7 +437,7 @@ $check-color: $brand-success;
 }
 
 .dropdown-menu.show {
-  height: 300px;
+  max-height: 300px; // Dropdown height is "auto" until it exceeds 300px
   overflow-y: scroll;
 }
 

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Container, Row, Col, Form } from "react-bootstrap";
-import { HiUserCircle } from "react-icons/hi";
+import Avatar from '../../avatar'
 import SocialMediaField from "../socialMediaField";
 import { Get, Put } from "../../../Utils/api";
 import { Button } from "react-bootstrap";
@@ -13,9 +13,7 @@ import history from "next/router";
 
 const Card = ({ user }) => {
   const [isEdit, setIsEdit] = React.useState(false);
-
   const [id, setUserId] = React.useState(0);
-
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [twitter, setTwitter] = React.useState("");
@@ -67,7 +65,6 @@ const Card = ({ user }) => {
       contact_link,
     });
   };
-
   return (
     <>
       <Row
@@ -80,7 +77,8 @@ const Card = ({ user }) => {
           }
         >
           <div>
-            <HiUserCircle size={128} />
+            {/* <HiUserCircle size={128} /> */}
+            <Avatar name = {name}/>
           </div>
           <div>{name}</div>
         </Col>
